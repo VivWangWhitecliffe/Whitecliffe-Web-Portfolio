@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!--Search engine optimization-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="luxury lodge retreat accommodation spa massage pool lounge snooker
+  fine-food fine-wine fire-place hospitality idylic serene breath-taking-views excursions">
+  <meta name="author" content="David Jacobs">
+  <meta name="robots" content="index, follow">
+
+  <title>About Us Page</title>
+
+  <!--CSS links-->
+  <link rel="stylesheet" href="aboutus.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="navbar.css">
+
+<!--JavaScript link-->
+  <script src="script.js"></script>
+
+</head>
+
+<!--sets the max width for wide screens-->
+<body style="max-width: 1800px; margin: 0 auto;">
+  <header>
+
+<!--Navigation bar structure and links-->
+    <nav class="navbar">
+      <div class="nav-logo"><img src="Images/LogoHeader.png" 
+        alt="A picture of the Ohario lodge icon with the slogan make your escape below"></div>
+      <div class="title"><p>Book your escape today!</p></div>
+
+      <div class="nav-items">
+        <a href="Home.html" tabindex="1">Home</a>
+        <a href="AboutUs.html" class="active" tabindex="2"><span>About&nbsp;Us</span></a>
+        <a href="Gallery.html" tabindex="3">Gallery</a>
+        <a href="Bookings.html" tabindex="4">Bookings</a>
+        <a href="Contact.html" tabindex="5">Contact</a>
+      </div>
+
+<!--JavaScript function call event handler for hamburger menu-->
+      <div class="nav-toggle" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+  </header>
+
+ <!--Main grid container for hosts image and text-->
+ <div class="AUsection">
+  <div class="AUleft-column">
+      <img src="Images/Hosts.jpg" alt="A picture of the hosts of the lodge Keith and Janet together">
+  </div>
+  <div class="AUright-column">
+
+    <p>Keith and Janet, are the owners and hosts of the Ohario Lodge. They offer a wealth of experience 
+    in hospitality to ensure an unforgettable guest experience.<br><br>
+    With a deep appreciation for the region's natural beauty and a passion for sharing it with 
+    others, Keith and Janet have created an oasis of comfort and luxury in the heart of 
+    New Zealand's South Island wilderness.<br><br>Keith's expertise in outdoor adventures, 
+    combined with Janet's culinary finesse, make for a perfect team to provide an
+     enriching and personalized stay for all who visit their idyllic retreat.</p>
+    </div>
+</div>
+
+  
+<!--Footer containing information and a logo-->
+<footer>
+  <div class="footer">
+      <img class="logo" src="Images/LogoFooter.png" alt="A picture of the Ohario lodge icon">
+      <div class="grid-container" id="footerContent">
+      </div>
+  </div>
+</footer>
+<!--JavaScript for reusing the footer code-->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  generateFooterContent();
+});
+
+  
+
+</script>
+
+  
+</body>
+
+</html>

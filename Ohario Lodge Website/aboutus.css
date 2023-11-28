@@ -1,0 +1,62 @@
+/*Creates a container for the left and right columns*/
+.AUsection {
+    display: grid;
+    /*2 column created for 1 row*/
+    grid-template-columns: 1fr 1fr; 
+    background-color:#302f2f;
+    border: 5px solid #fff;
+    border-left: none;
+    border-right: none;
+}
+
+/*Positioning and sizing for the image*/
+.AUleft-column img {
+  max-width: 400px;
+  max-height: 400px;
+  justify-content: center;
+  margin: 0 0 0 auto;
+  padding: 30px;
+} 
+
+/*CSS for the left column*/
+.AUleft-column {
+  display: grid;
+  padding: 10px;
+}
+
+/*Positioning and sizing for the right column*/
+.AUright-column {
+  max-width: 450px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  justify-self: left;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #fff;
+  line-height: 1.4em;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 968px) {
+    .AUsection {
+    grid-template-columns: 1fr;
+    }
+
+    .AUleft-column {
+     justify-self: center;
+     }
+
+    .AUright-column {
+      justify-self: center;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 0px;
+    }
+
+    .AUleft-column img {
+      max-width: 300px;
+      max-height: 300px;
+      justify-content: center;
+      padding: 0px;
+    }
+  }

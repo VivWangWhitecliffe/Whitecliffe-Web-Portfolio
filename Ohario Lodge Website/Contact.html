@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!--Search engine optimization-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="luxury lodge retreat accommodation spa massage pool lounge snooker
+  fine-food fine-wine fire-place hospitality idylic serene breath-taking-views excursions">
+  <meta name="author" content="David Jacobs">
+  <meta name="robots" content="index, follow">
+
+  <title>Contact Page</title>
+
+<!--CSS links-->
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="navbar.css">
+
+<!--JavaScript link-->
+  <script src="script.js"></script>
+  
+</head>
+
+<!--sets the max width for wide screens-->
+<body style="max-width: 1800px; margin: 0 auto;">
+<header>
+
+<!--Navigation bar structure and links-->
+    <nav class="navbar">
+      <div class="nav-logo"><img src="Images/LogoHeader.png" 
+        alt="A picture of the Ohario lodge icon with the slogan make your escape below"></div>
+      <div class="title"><p>Book your escape today!</p></div>
+      <div class="nav-items">
+        <a href="Home.html" tabindex="1">Home</a>
+        <a href="AboutUs.html" tabindex="2"><span>About&nbsp;Us</span></a>
+        <a href="Gallery.html" tabindex="3">Gallery</a>
+        <a href="Bookings.html" tabindex="4">Bookings</a>
+        <a href="Contact.html" tabindex="5"class="active">Contact</a>
+      </div>
+
+<!--JavaScript function call event handler for hamburger menu-->
+      <div class="nav-toggle" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+  </header>
+
+<!--Container containing a information on left, a map center, and a contact form right-->
+    <main class="grid-container4">
+        <div class="box1">
+            <div class="text-box" style="font-size: 18pt; color: #282626;">Location</div>
+            <div class="text-box" style="font-size: 12pt; color: #6a6969;">152 Maungawera Valley Road,</div>
+            <div class="text-box" style="font-size: 12pt; color: #6a6969;">Wanaka, New Zealand.</div>
+            <div class="text-box" style="font-size: 18pt; color: #282626;">Contact numbers</div>
+            <div class="text-box" style="font-size: 12pt; color: #6a6969;">(03) 529 2799</div>
+            <div class="text-box" style="font-size: 12pt; color: #6a6969;">022 505 1777</div>
+            <div class="text-box" style="font-size: 18pt; color: #282626;">follow us</div>
+          <div class="logoicons"><img src="Images/Logoicons.png" alt="three icons for facebook, instagram and youtube"></div>
+        </div>
+        <div class="boxmap"><img src="Images/Map.png" 
+          alt="A google map of the Wanaka area with the loction of the lodge identified with a pink pin"></div>
+        
+        <div class="box2">Contact Us<br>
+            <form class="contact-form">
+                <input type="text" placeholder="Please enter your name" id="cfname" required autocomplete="off">
+                <input type="email" placeholder="Please enter your email address" id="cfemail" required autocomplete="off">
+                <textarea style="font-family: Arial; font-size: 10pt;" required placeholder="Please leave a message" 
+                rows="8" id="cfmessage" autocomplete="off"></textarea>
+                <!--button to display thank you note for message submitted-->
+                <button type="submit" onclick="thanksNote()">Submit</button>
+                
+            </form>
+        </div>
+        <div class="messageNote" style="font-size: 16pt; color: #282626; display: none;">Thank you<br><br>Your message has been sent.</div>
+    </main>
+
+<!--Footer containing information and a logo-->
+<footer>
+  <div class="footer">
+      <img class="logo" src="Images/LogoFooter.png" alt="A picture of the Ohario lodge icon">
+      <div class="grid-container" id="footerContent">
+      </div>
+  </div>
+</footer>
+<!--JavaScript for reusing the footer code-->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  generateFooterContent();
+});
+</script>
+</body>
+</html>

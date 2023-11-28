@@ -1,0 +1,107 @@
+/*CSS for the body*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+  
+/*CSS for the header*/
+header {
+  background-color: rgb(87, 87, 87);
+  color: #fff;
+  padding: 20px;
+}
+
+/*CSS for the navbar including links, logo, title, button formatting, and hamburger menu*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*CSS for active link*/
+.navbar a.active{
+  background-color: rgb(95, 140, 96);
+}
+
+/*CSS for links that are not active. Only allows links that are not active to change colour when hovered*/ 
+.navbar a:hover:not(.active) {    
+  background-color: lightgray;
+  color: black;
+    }
+
+/*positions logo in the header*/
+.nav-logo {      
+  max-width: 250px;
+  max-height: 250px;
+}
+
+/*CSS to size nav-logo image*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ /*CSS positioning for title text string*/
+.title {              
+  position: absolute;
+  margin-left: 270px;
+  font-size: 16pt;
+  color: #fff;
+}
+
+/*Allows nav-items to flex*/
+.nav-items {      
+  display: flex;
+  /*Keeps the hamburger drop down menu background infront of the slideshow on the home page*/
+  z-index: 1000;   
+}
+
+/*CSS styling for nav-items*/
+.nav-items a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 3px;
+  margin-left: 40px;
+  /*Keeps the hamburger drop down menu text infront of the slideshow on the home page*/
+  z-index: 1000; 
+}
+
+/*CSS to hide the hamburger menu until the media query allows it to be visible */
+.nav-toggle {
+  display: none;
+  font-size: 3.5rem;
+  cursor: pointer;
+}
+
+/*media query to hide the navigation bar*/
+@media screen and (max-width: 740px) {
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 110px;
+    right: 10px;
+    background-color: #333;
+    padding: 10px;
+  }
+
+ /*CSS stlying for the hamburger drop down menu*/ 
+  .nav-items a {
+    margin: 10px 0;
+  }
+
+/*CSS to make the hamburger menu appear*/   
+  .nav-toggle {
+    display: block;
+  }
+}
+
+/*Media query to make the title disappear*/
+@media screen and (max-width: 1060px) {
+  .title {
+    display: none;
+  }
+}
+    

@@ -1,0 +1,108 @@
+/*CSS for the body*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/*CSS to position, stlye, and size the overlay*/
+.overlay {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*Sets a higher z-index value than the navbar so the navbar does not appear over the overlay*/
+  z-index: 1000; 
+
+}
+/*Styling for the text boxes that contain the FAQ's, Terms of use , and Provacy policy*/
+.text-box7 {
+  background-color: white;
+  padding: 20px;
+  max-width: 400px;
+  font-family: Calibri;
+  border: 1px solid #ccc;
+}
+
+/*CSS styling for the close button*/
+.close-button {
+  background-color: #e5e4e4;
+  color: #282828;
+  padding: 10px 10px;
+  border: 2px solid #3e3e3e;
+  border-radius: 4px;
+  width: 90px;
+  max-height: 40px;
+  cursor: pointer;
+}
+
+/*CSS styling for the button hover*/
+.close-button:hover {
+  background-color: #656565;
+  border: 2px solid #fff;
+  color: #fff;
+}
+  
+/*CSS styling for the help links, FAQ's, Terms of use, and Privacy Policy*/  
+a.help-link {
+  color: white; 
+  text-decoration: none; 
+  border-bottom: 2px solid white; 
+  /* Add a colored underline with desired thickness */
+  box-sizing: content-box; 
+}
+
+/*CSS to position and stlye the footer*/
+.footer {
+  background-color:rgb(87, 87, 87);
+  color: #fff;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 0px;
+}
+
+/*CSS to position a nd display the logo*/
+.logo {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  max-width: 100px;
+  padding-top: 20px;
+}
+
+/*Container for the 4 footer text elements*/
+.grid-container {
+  display: grid;
+  /*Creates 4 columns in a single row*/
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 10px;
+  padding: 20px;  
+}
+
+/*CSS for the text elements*/
+.box {
+  background-color: #575656;
+  padding: 10px;
+
+}
+
+/* Collapse the grid to 2 columns on smaller screens */
+@media screen and (max-width: 1000px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+} 
+
+/* Collapse the grid to a single column on small screens */
+@media screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Search engine optimization-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="luxury lodge retreat accommodation spa massage pool lounge snooker 
+  fine-food fine-wine fire-place hospitality idylic serene breath-taking-views excursions">
+  <meta name="author" content="David Jacobs">
+  <meta name="robots" content="index, follow">
+
+  <title>Booking Page</title>
+
+<!--CSS links-->
+  <link rel="stylesheet" href="bookings.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="navbar.css">
+
+<!--JavaScript link-->
+  <script src="script.js"></script>
+
+</head>
+
+<!--sets the max width for wide screens-->
+<body style="max-width: 1800px; margin: 0 auto;">
+  <header>
+
+<!--Navigation bar structure and links-->
+    <nav class="navbar">
+      <div class="nav-logo"><img src="Images/LogoHeader.png" 
+        alt="A picture of the Ohario lodge icon with the slogan make your escape below"></div>
+      <div class="title"><p>Book your escape today!</p></div>
+
+      <div class="nav-items">
+        <a href="Home.html" tabindex="1">Home</a>
+        <a href="AboutUs.html" tabindex="2"><span>About&nbsp;Us</span></a>
+        <a href="Gallery.html" tabindex="3">Gallery</a>
+        <a href="Bookings.html" tabindex="4" class="active">Bookings</a>
+        <a href="Contact.html" tabindex="5">Contact</a>
+      </div>
+
+<!--JavaScript function call event handler for hamburger menu-->
+      <div class="nav-toggle" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+  </header>
+
+<!--Container for bookings page-->
+  <div class="grid-container11">
+    <!-- Grid Item 1 -->
+    <div class="grid-item11">
+        <img src="Images/BRoom1.jpg" alt="A picture of the Pukeko appartment with a large comfortable bed and luxury furnishings">
+        <div class="text-box11">
+            <h style="font-family: Calibri; font-size: 18pt;"><b>Pukeko Apartment</b></h><br><br><br>
+            <p style="text-align: left; max-width: 250px; margin: 0 auto;">Max:  2 Guests<br><br>
+                Located in the Lodge's east wing with unrestricted mountain views from your private balcony,
+                the Pukeko Apartment has its own kitchinette, bar fridge and coffee machine. It also has
+                a large ensuite with a shower and bath plus a fully stocked toiletry cabinet with everything you'll need.<br><br><br>
+                <p style="font-family: Calibri; font-size: 14pt;"><b>From $380 per/night.</b></p>
+                </p>
+        </div>
+       <div><button class="select-button11" id="button1" onclick="showRoom1()">Select</button>
+    </div></div>
+     
+   
+    <!-- Grid Item 2 -->
+      <div class="grid-item12">
+        <img src="Images/BRoom2.jpg" alt="A picture of the Kakapo suite with a large comfortable four poster bed and luxury furnishings">
+        <div class="text-box11">
+            <h style="font-family: Calibri; font-size: 18pt;"><b>Kakapo Suite</b></h><br><br><br>
+               <p style="text-align: left;max-width: 250px; margin: 0 auto;">Max: 2 Guests<br><br>
+                Situated on the first floor of the main building, the Kakapo Suite is also known
+                 as the honeymoon suite thanks to its romantic, comfortable four-poster bed with luxurious
+                 bed linen and furnishings. The suite also has an ensuite with a shower and bath, 
+                 and a fully stocked kichinette.<br><br><br>
+                 <p style="font-family: Calibri; font-size: 14pt;"><b>From $410 per/night.</b></p>
+                </p>
+        </div>
+       <div><button class="select-button12" Id="button2" onclick="showRoom2()">Select</button>
+    </div></div>
+
+    <!-- Grid Item 3 -->
+    <div class="grid-item13">
+        <img src="Images/BRoom3.jpg" alt="A picture of the Tui appartment with a large comfortable bed and luxury furnishings">
+        <div class="text-box11">
+            <h style="font-family: Calibri; font-size: 18pt;"><b>Tui Apartment</b></h><br><br><br>
+            <p style="text-align: left;max-width: 250px; margin: 0 auto;">Max: 2 Guests<br><br>
+                Located in the Lodge's west wing the Tui Apartment has breath taking views of the lake Wanaka. 
+                For cosy evenings the appartment also has a fire place and as many logs as you'll need. In the 
+                appartment there is also a fully stocked kichinette and a large ensuite with bath and shower.<br><br><br>
+                <p style="font-family: Calibri; font-size: 14pt;"><b>From $375 per/night.</b></p>
+            </p>
+        </div>
+       <div><button class="select-button13" id="button3" onclick="showRoom3()">Select</button>
+    </div></div>
+
+    <!-- Grid Item 4 -->
+    <div class="grid-item14">
+        <img src="Images/BRoom4.jpg" alt="A picture of the Siulvereye suite with a large comfortable beds and luxury furnishings">
+        <div class="text-box11">
+            <h style="font-family: Calibri; font-size: 18pt;"><b>Silvereye Suite</b></h><br><br><br>
+            <p style="text-align: left;max-width: 250px; margin: 0 auto;">Max: 5 Guests<br><br>
+                Situated on the ground floor of the building the Silvereye Suite is a family size room with a fully 
+                stocked kichinette, a large ensuite, and access to you own personal outdoor space. Fire up the BBQ and open a 
+                bottle of wine as you relax and watch the sunset over Lake Wanaka.<br><br><br>
+                <p style="font-family: Calibri; font-size: 14pt;"><b>From $425 per/night.</b></p>
+            </p>
+        </div>
+        <div><button class="select-button14" id="button4" onclick="showRoom4()">Select</button>
+    </div></div>
+
+
+<!--Container for book in details-->
+<div class="container7">
+<div>
+  <p style="text-align: center; font-family: Calibri; font-size: 22pt;">Book In Information</p>
+</div>
+<div class="content">
+<p style="text-align: center; font-family: Calibri; font-size: 18pt; margin-bottom: 5px;">Select Month</p>
+
+<select id="monthSelect">
+  <option value="December 2023">December 2023</option>
+  <option value="January 2024">January 2024</option>
+  <option value="February 2024">February 2024</option>
+  <option value="March 2024">March 2024</option>
+  <option value="April 2024">April 2024</option>
+  <option value="May 2024">May 2024</option>
+  <option value="June 2024">June 2024</option>
+</select>
+
+<p style="text-align: center; font-family: Calibri; font-size: 18pt; margin-bottom: 5px;">Check-In Date</p>
+<div>
+  <input type ="text" style="max-width: 320px;" placeholder="Please enter the day of the month" maxlength="2" id="date" required>
+    </div>
+    <p style="text-align: center; font-family: Calibri; font-size: 18pt; margin-bottom: 5px;">Length of stay in days</p>
+    <div>
+  <input type ="text" style="max-width: 320px;" placeholder="Please enter the number of days" maxlength="3" id="days" required>
+    </div>
+
+   <!--calls the fucntion resetGrid to display grid-container11-->
+  <button type="submit" onclick="resetGrid()">Back</button>
+
+   <!--calls the fucntion getSelectedOption to proceed with selection process-->
+   <button type="submit" onclick="getSelectedOption()">Confirm Selection</button>
+</div></div>
+
+<script>
+/*Set variable RoomCost according to the button clicked */
+var RoomCost = 0;
+
+document.getElementById('button1').addEventListener('click', function() {
+RoomCost = 380.00;
+updateRoomCost();
+});
+
+document.getElementById('button2').addEventListener('click', function() {
+RoomCost = 410.00;
+updateRoomCost();
+});
+
+document.getElementById('button3').addEventListener('click', function() {
+RoomCost = 375.00;
+updateRoomCost();
+});
+
+document.getElementById('button4').addEventListener('click', function() {
+RoomCost = 425.00;
+updateRoomCost();
+});
+
+function updateRoomCost() {
+document.getElementById('roomCost').textContent = RoomCost;
+}
+</script>
+
+<!--Container for the payment form-->
+<div class="container8">
+<p style="font-size: 20pt;">Payment Details</p>
+
+<form id="paymentForm">
+<div type="text" style="font-size: 18pt;">Total to pay: $<span id="ammount"></span> NZD<br><br></div>
+<input type="email" placeholder="Please enter an email address" id="email" required autocomplete="off" >
+<input type="text" placeholder="Please enter your name" id="fullName" required>
+<input type="text" id="visaNumber" placeholder="Please enter your 16 digit VISA Number" required autocomplete="off">
+<input type="text" placeholder="Please enter the expiry date MM/YY" id="expiryDate" maxlength="7" required autocomplete="off">
+<input type="text" placeholder="Please enter your 3 digit CVV number" id="cvv" maxlength="3" required autocomplete="off">
+</form>
+<div class="button-container8">
+<!--This button canacels the banking datails page and returns to the bookings details page-->
+<button type="submit" onclick="newform()">Cancel</button>
+
+<!-- JavaScript function call event handler to display banking details for approval -->
+<button type="submit" onclick="validateAndSubmit()">Submit Payment</button>
+</div>
+</div>
+<script>
+
+document.getElementById("visaNumber").addEventListener("input", function () {
+  
+    let value = this.value.replace(/\D/g, ""); // Allow only numeric characters for variable visaNumber
+    if (value.length > 16) {
+      value = value.slice(0, 16);
+    }
+    this.value = value;
+  });
+
+  document.getElementById("expiryDate").addEventListener("input", function () {
+  let value = this.value.replace(/[^0-9/]/g, ""); // Allow only numeric characters and  the / symbol for variable expiryDate
+  if (value.length > 7) {
+    value = value.slice(0, 6);
+  }
+  this.value = value;
+});
+
+  document.getElementById("cvv").addEventListener("input", function () {
+    let value = this.value.replace(/\D/g, ""); // Allow only numeric characters for 'cvv' variable
+    if (value.length > 3) {
+      value = value.slice(0, 9); 
+    }
+    this.value = value;
+  });
+
+  document.getElementById("date").addEventListener("input", function () {
+    let value = this.value.replace(/\D/g, ""); // Allow only numeric characters for 'days' variable
+    if (value.length > 2) {
+      value = value.slice(0, 16); 
+    }
+    this.value = value;
+  });
+
+  document.getElementById("days").addEventListener("input", function () {
+    let value = this.value.replace(/\D/g, ""); // Allow only numeric characters for 'days' variable
+    if (value.length > 3) {
+      value = value.slice(0, 9);
+    }
+    this.value = value;
+  });
+
+ </script>
+
+<!--Creates a container for the timing animation-->
+<div class="progress-container">
+  <!--The timing animation-->
+  <div class="progress-circle"></div>
+</div>
+
+<!--Container for notification of payment-->
+<div class="container9">
+<p style="font-family: Calibri; font-size: 16pt;">Thank you, your booking is confirmed.<br><br>
+Your check in date is,<br><span style="font-family: Calibri; font-size: 16pt;" id="timeDay"></span>&nbsp;
+<span style="font-family: Calibri; font-size: 16pt;" id="timeMonth"></span><br>
+<br>Your invoice has been sent to your email account.</p>
+</div>
+
+</div> <!--/div closing container11-->
+
+<!--Footer containing information and a logo-->
+<footer>
+  <div class="footer">
+      <img class="logo" src="Images/LogoFooter.png" alt="A picture of the Ohario lodge icon">
+      <div class="grid-container" id="footerContent">
+      </div>
+  </div>
+</footer>
+
+<!--JavaScript for reusing the footer code-->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  generateFooterContent();
+});
+
+</script>
+</body>
+
+</html>

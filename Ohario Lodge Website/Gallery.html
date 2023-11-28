@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!--Search engine optimization-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="luxury lodge retreat accommodation spa massage pool lounge snooker
+  fine-food fine-wine fire-place hospitality idylic serene breath-taking-views excursions">
+  <meta name="author" content="David Jacobs">
+  <meta name="robots" content="index, follow">
+
+  <title>Gallery Page</title>
+
+ <!--CSS links--> 
+  <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="navbar.css">
+
+<!--JavaScript link-->
+  <script src="script.js"></script>
+  
+</head>
+
+<!--sets the max width for wide screens-->
+<body style="max-width: 1800px; margin: 0 auto;">
+
+  <header>
+    <!--Navigation bar structure and links-->
+    <nav class="navbar">
+      <div class="nav-logo"><img src="Images/LogoHeader.png" 
+        alt="A picture of the Ohario lodge icon with the slogan make your escape below"></div>
+      <div class="title"><p>Book your escape today!</p></div>
+
+      <div class="nav-items">
+        <a href="Home.html" tabindex="1">Home</a>
+        <a href="AboutUs.html" tabindex="2"><span>About&nbsp;Us</span></a>
+        <a href="Gallery.html" tabindex="3"class="active">Gallery</a>
+        <a href="Bookings.html" tabindex="4">Bookings</a>
+        <a href="Contact.html" tabindex="5">Contact</a>
+      </div>
+<!--JavaScript function call event handler for hamburger menu-->
+      <div class="nav-toggle" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+  </header>
+
+<!--Main container for slides--> 
+
+<main class="grid-container2">
+  <div class="slideshow-container">
+    
+    
+    <div class="slide">
+      <img src="Images/Lodge1.jpg" alt="A picture of the front of the lodge">
+    </div>
+      <div class="slide">
+      <img src="Images/Lodge2.jpg" alt="A picture of the lodge from above">
+    </div>
+    <div class="slide">
+      <img src="Images/Lodge3.gif" alt="A picture of the back of the lodge">
+    </div>
+    <div class="slide">
+      <img src="Images/DinningRoom.jpg" alt="A bright picture of a white dining area for quest to eat">
+    </div>
+    <div class="slide">
+      <img src="Images/FirePlace.jpg" alt="A picture of a large fire place with sofas on each side and a bouquet of flowers">
+    </div>
+    <div class="slide">
+      <img src="Images/Lounge.jpg" alt="A large lounge with a fire place and sofas with a view of the lake">
+    </div>
+    <div class="slide">
+      <img src="Images/Room.jpg" alt="A comforatble louge area for quests to relax">
+    </div>
+    <div class="slide">
+      <img src="Images/Massage.png" alt="A picture of two massage tables ready for quests to indulge">
+    </div>
+    <div class="slide">
+      <img src="Images/Pool.jpg" alt="A picture of a large indoor swimming pool for quest to use">
+    </div>
+    <div class="slide">
+      <img src="Images/Snooker.jpg" alt="A picture of a large room with a snooker table and a conservatory with seating">
+    </div>
+    <div class="slide">
+      <img src="Images/HotTub.jpg" alt="A picture of a hot tub on a outside deck with a view of the lake and mountains">
+    </div>
+    
+   
+  <!--buttons to move forward and back through the slides-->
+  <button id="prevBtn" class="nav-button" onclick="prevSlide()">Prev</button>
+  <button id="nextBtn" class="nav-button" onclick="nextSlide()">Next</button>
+</div>
+</main>
+<script>
+const slides = document.querySelectorAll(".slide");
+let currentSlide = 0;
+
+function showSlide(n) {
+  // code to switch slides in the queue 
+  slides[currentSlide].classList.remove("active");
+  currentSlide = (n + slides.length) % slides.length;
+  slides[currentSlide].classList.add("active");
+}
+//moves slides forward
+function nextSlide() {
+  showSlide(currentSlide + 1);
+}
+//moves slides backward
+function prevSlide() {
+  showSlide(currentSlide - 1);
+}
+//displays current slide
+showSlide(currentSlide);
+</script>
+
+<!--Footer containing information and a logo-->
+<footer>
+  <div class="footer">
+      <img class="logo" src="Images/LogoFooter.png" alt="A picture of the Ohario lodge icon">
+      <div class="grid-container" id="footerContent">
+      </div>
+  </div>
+</footer>
+<!--JavaScript for reusing the footer code-->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  generateFooterContent();
+});
+
+  
+
+</script>
+</body>
+</html>

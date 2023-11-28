@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!--Search engine optimization-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="luxury lodge retreat accommodation spa massage pool lounge snooker
+   fine-food fine-wine fire-place hospitality idylic serene breath-taking-views excursions">
+  <meta name="author" content="David Jacobs">
+  <meta name="robots" content="index, follow">
+ 
+  <title>Ohario Lodge Website</title>
+
+  <!--CSS links-->
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="navbar.css">
+
+<!--JavaScript link-->
+  <script src="script.js"></script>
+
+</head>
+
+<!--sets the max width for wide screens-->
+<body style="max-width: 1800px; margin: 0 auto;">
+
+<header>
+
+<!--Navigation bar structure and links-->
+    <nav class="navbar">
+      <div class="nav-logo"><img src="Images/LogoHeader.png" 
+        alt="A picture of the Ohario lodge icon with the slogan make your escape below"></div>
+      <div class="title"><p>Book your escape today!</p></div>
+
+      <div class="nav-items">
+        <a href="Home.html" tabindex="1" class="active" >Home</a>
+        <a href="AboutUs.html" tabindex="2"><span>About&nbsp;Us</span></a>
+        <a href="Gallery.html" tabindex="3">Gallery</a>
+        <a href="Bookings.html" tabindex="4">Bookings</a>
+        <a href="Contact.html" tabindex="5">Contact</a>
+      </div>
+
+<!--JavaScript function call event handler for hamburger menu-->
+      <div class="nav-toggle" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+  </header>
+
+ <!--Main grid container for Lodge image and text-->
+ <div class="section">
+  <div class="left-column">
+      <img src="Images/Lodge4.jpg" alt="A wide picture of the lodge in a clear evening with the lodge reflected in a lake">
+  </div>
+  <div class="right-column">
+    <p>Nestled amidst the pristine wilderness of New Zealand's South Island, the Ohario Lodge is a true haven 
+    for discerning travellers seeking an exclusive and unparalled retreat. With a backdrop of breath-taking 
+    snow capped mountains, the lodge offers a serene and remote escape from the hustle and bustle of city life.
+    <br><br>
+    The lodge boasts a range of lavish accommodations, each featuring spacious, well-appointed rooms and private
+     balconies that offer sweeping views of the surrounding landscape. Guests can unwind in the luxurious spa, 
+     complete with hot tubs and indulgent treatments, while the lodge's gourmet restaurant offers a delectable 
+     culinary experience and the finest New Zealand wines. 
+   <br><br>
+   The attentive staff ensure that every need is met, offering personalized service to create a truly memorable stay. 
+   Furthermore, the lodge's commitment to sustainability and responsible tourism is evident in its eco-friendly practices
+    and conservation efforts, allowing guests to connect with the natural beauty of the South Island without compromising 
+    its ecological integrity. 
+</p>
+       
+    </div>
+</div>
+
+  
+<!--Footer containing information and a logo-->
+<footer>
+  <div class="footer">
+      <img class="logo" src="Images/LogoFooter.png" alt="A picture of the Ohario lodge icon">
+      <div class="grid-container" id="footerContent">
+      </div>
+  </div>
+</footer>
+<!--JavaScript for reusing the footer code-->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  generateFooterContent();
+});
+
+  
+
+</script>
+
+  
+</body>
+
+</html>

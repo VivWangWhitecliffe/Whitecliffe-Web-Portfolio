@@ -1,0 +1,111 @@
+/*Container for slidshow*/
+.grid-container2 {
+  display: grid;
+  /*1 column created for 1 row*/
+  grid-template-columns: 1fr ; 
+  background-color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/*CSS styling for buttons*/
+.nav-button {
+  position: absolute;
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px; 
+  height: 50px; 
+  background-color: rgba(0, 0, 0, 0.6); 
+  color: white; 
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/*Positioning for previous button*/
+#prevBtn {
+  
+  left: 50%; 
+  transform: translateX(-450px); 
+  /*Keeps button infront of slideshow when minimized*/
+  z-index: 1000;
+  }
+  
+/*Positioning for next button*/
+#nextBtn {
+  
+  right: 50%; 
+  transform: translateX(450px); 
+  /*Keeps button infront of slideshow when minimized*/
+  z-index: 1000;
+}
+
+/*Container for the slideshow*/
+.slideshow-container{
+  position: relative;
+  display: grid;
+  justify-content: center;
+  background-color:#302f2f;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  /*Keeps the slideshow behind the hamburger drop down menu*/
+  z-index: 900; 
+}
+
+/*Sets the slides as hidden*/
+.slide {
+  display: none;
+}
+
+/*CSS for slideshow images*/
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+/*Sets the active slide as visible*/
+.slide.active {
+  display: block;
+}
+
+/*Media queries for responsiveness*/
+@media (min-width: 781px) and (max-width: 925px) {
+  /*Positioning for previous button*/
+  #prevBtn {    
+    left: 10%;
+    transform: translateX(0);
+    transform: translateY(-50%);
+    /*Keeps button infront of slideshow when minimized*/
+    z-index: 1000;
+}
+  /*Positioning for next button*/
+  #nextBtn {
+    right: 10%; 
+    transform: translateX(0);
+    transform: translateY(-50%);
+    /*Keeps button infront of slideshow when minimized*/
+    z-index: 1000;
+  }
+}
+
+@media (max-width: 780px) {
+  /*Positioning for previous button*/
+  #prevBtn {
+    left: 30px;
+    transform: translateX(0);
+    transform: translateY(-50%);
+    /*Keeps button infront of slideshow when minimized*/
+    z-index: 1000;
+}
+
+  #nextBtn {
+    /*Positioning for next button*/
+    right: 30px; 
+    transform: translateX(0);
+    transform: translateY(-50%);
+    /*Keeps button infront of slideshow when minimized*/
+    z-index: 1000;
+  }
+}

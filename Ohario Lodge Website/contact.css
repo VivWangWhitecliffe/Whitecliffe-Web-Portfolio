@@ -1,0 +1,152 @@
+/*Grid container for contact details, map, and contact form*/
+.grid-container4 {
+  display: grid;
+  /*this code creates a grid layout where the columns are repeated to fit the available space*/
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  /*this code gives the central map extra space*/
+  grid-template-columns: 30% 40% 30%;;
+  min-height: 424px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/*This box contains the contact details*/   
+.box1 {
+  display: grid;
+  padding-top: 30px;
+  max-height: 350px;
+  background-color: #fff;
+  grid-template-rows: repeat(7, 1fr) auto; /*creates 5 rows for the contact details*/
+  grid-gap: 5px;
+}
+
+/*CSS for text in box1*/
+.text-box {
+  text-align: center;
+  background-color: #fff;
+}
+  
+/*CSS for social media icons*/
+.logoicons {
+  display: block;
+  margin: 0 auto;
+  max-width: 140px;
+}
+
+/*CSS for map*/
+.boxmap {
+  display: grid;
+  align-items: center;
+}
+
+/*This box cotains the message box*/
+.box2 {
+  display: grid;
+  padding-top: 30px;
+  max-height: 400px;
+  text-align: center;
+  background-color: #fff;
+  font-family: Calibri;
+  font-size: 18pt;
+  
+}
+
+/*CSS for the contact form styling*/
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr; /*creates a column for the contact form*/
+  padding: 25px;
+  grid-gap: 10px;
+}
+
+/*CSS for the input fields*/
+.contact-form input,
+.contact-form textarea {
+  min-width: 250px;
+  max-width: 380px;
+  justify-self: center;
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: none;
+}
+  
+/*CSS for the submit button*/
+.contact-form button {
+  margin-top: 10px;
+  background-color: #e5e4e4;
+  color: #282828;
+  padding: 10px 10px;
+  border: 2px solid #ababab;
+  border-radius: 4px;
+  width: 90px;
+  max-height: 40px;
+  justify-self: center;
+}
+
+/*CSS for button hover*/
+.contact-form button:hover {
+  background-color: #656565;
+  color: #fff;
+}
+  
+/*CSS for positioning the message note*/
+.messageNote {
+  text-align: center;
+  margin-top: 100px;
+  order: 3;
+  order: 2;
+}
+
+@media (max-width: 1000px) {
+  .grid-container4 {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  .box1 {
+    margin-bottom: 30px;
+    order: 1;
+  }
+  .box2 {
+    order: 2;
+  }
+  .messageNote {
+    padding-bottom: 239px;
+  }
+  .boxmap {
+    order: 3;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-self: center;
+   grid-column: 1 / span 2; 
+  }
+}
+
+/*Media queries for responsive design*/
+@media (max-width: 668px) {
+  .grid-container4 {
+        grid-template-columns: repeat(1, 1fr);
+        }
+  
+  .box1 {
+    padding-bottom: 20px;
+    order: 1;
+  }
+  
+  .boxmap {
+    padding-left: 30px;
+    padding-right: 30px;
+    order: 2;
+  }
+  
+  .box2 {
+    padding-top: 50px;
+    order: 3;
+  }
+  
+  .messageNote {
+    margin-top: 100px;
+    padding-bottom: 260px;
+  }
+}
